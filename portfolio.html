@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Портфолио</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css" />
+    <link rel="stylesheet" href="./css/main.min.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <a class="logo link" href="index.html"><span class="logo__bracket">Web</span>Studio</a>
+            <nav class="menu">
+                <ul class="menu__list list">
+                    <li class="menu__item">
+                        <a class="menu__link link" href="index.html" target="_self">Студия</a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__link link current" href="portfolio.html" target="_self">Портфолио</a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__link link" href="">Контакты</a>
+                    </li>
+                </ul>
+            </nav>
+            <ul class="heder__contacts list">
+                <li><a class="heder__contacts-item link" href="mailto:info@devstudio.com">
+                        <svg class="heder__contacts-icon">
+                            <use href="./images/icons.svg#icon-mail"></use>
+                        </svg>
+                        info@devstudio.com</a></li>
+                <li class="heder__contacts-item"><a class="link" href="tel:+380961111111">
+                        <svg class="heder__contacts-icon phone">
+                            <use href="./images/icons.svg#icon-phone"></use>
+                        </svg>+38 096 111 11 11</a></li>
+            </ul>
+            <button type="button" class="menu-open-btn">
+                <svg width="24" height="16" class="menu-open-ico">
+                    <use href="./images/icons.svg#icon-menu"></use>
+                </svg>
+            </button>
+            <div class="menu__mob is-hidden">
+                <div class="container">
+
+                    <div class="menu__mob-top">
+                        <button type="button" class="menu__mob-close">
+                            <svg class="modal-close-ico" width="30" height="30">
+                                <use href="./images/icons.svg#icon-modal-close"></use>
+
+                            </svg>
+                        </button>
+                        <ul class="mob__pages list">
+                            <li class="mob__pages-item">
+                                <a class="mob__pages-link link" href="index.html" target="_self">Студия</a>
+                            </li>
+                            <li class="mob__pages-item">
+                                <a class="mob__pages-link link current" href="portfolio.html"
+                                    target="_self">Портфолио</a>
+                            </li>
+                            <li class="mob__pages-item">
+                                <a class="mob__pages-link link" href="">Контакты</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="menu__mob-bottom">
+                        <ul class="mob__contacts list">
+                            <li class="mob__contacts-item"><a class="link"
+                                    href="mailto:info@devstudio.com">info@devstudio.com</a>
+                            </li>
+                            <li class="mob__contacts-item"><a class="link" href="tel:+380961111111">+38 096 111 11
+                                    11</a>
+                            </li>
+                        </ul>
+                        <ul class="mob__soc list">
+                            <li class="mob__soc-item">
+                                <a class="link" href="">Instagram</a>
+                            </li>
+                            <li class="mob__soc-item">
+                                <a class="link" href="">Twitter</a>
+                            </li>
+                            <li class="mob__soc-item">
+                                <a class="link" href="">Facebook</a>
+                            </li>
+                            <li class="mob__soc-item">
+                                <a class="link" href="">LinkedIn</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="section">
+            <div class="container">
+                <h1 class="visually-hidden">Фильтр</h1>
+
+                <ul class="filtr list">
+                    <li class="filtr-btn"><button type="button" class="portfolio-button active-btn">Все</button></li>
+                    <li class="filtr-btn"><button type="button" class="portfolio-button">Веб-сайты</button></li>
+                    <li class="filtr-btn"><button type="button" class="portfolio-button">Приложения</button></li>
+                    <li class="filtr-btn"><button type="button" class="portfolio-button">Дизайн</button></li>
+                    <li class="filtr-btn"><button type="button" class="portfolio-button">Маркетинг</button></li>
+                </ul>
+
+
+                <ul class="portfolio list">
+                    <li class="portfolio-item">
+
+                        <div class="portfolio-wrap">
+                            <picture>
+                                <source
+                                    srcset="
+                                                                                ./images/portfolio/desktop/1-project.jpg 1x,
+                                                                                ./images/portfolio/desktop/1-project-2x.jpg 2x"
+                                    media="(min-width: 1200px)" />
+
+                                <source
+                                    srcset="
+                                                                                    ./images/portfolio/tablet/1-project-tab.jpg 1x,
+                                                                                    ./images/portfolio/tablet/1-project-tab-2x.jpg 2x"
+                                    media="(min-width: 768px)" />
+
+                                <source
+                                    srcset="
+                                                                                ./images/portfolio/mobile/1-project-mob.jpg 1x,
+                                                                                ./images/portfolio/mobile/1-project-mob-2x.jpg 2x"
+                                    media="(min-width: 320px)" />
+                                <img src="./images/portfolio/filter1.jpg" alt="Технокряк" width="450">
+
+                            </picture>
+                            <p class="portfolio-text">Ресурс предлагает комплексные предложения с разным уровнем
+                                функционала и сервисов. Все
+                                это
+                                позволит посетителю получить
+                                исчерпывающие сведения о компании или частном лице.</p>
+                        </div>
+                        <div class="portfolio-border">
+                            <h2 class="portfolio-name">Технокряк</h2>
+                            <p class="portfolio-filtr">Веб-сайт</p>
+                        </div>
+                    </li>
+                    <li class="portfolio-item">
+                        <div class="portfolio-wrap">
+                            <picture>
+                                <source
+                                    srcset="
+                                                                                                            ./images/portfolio/desktop/2-project.jpg 1x,
+                                                                                                            ./images/portfolio/desktop/2-project-2x.jpg 2x"
+                                    media="(min-width: 1200px)" />
+
+                                <source
+                                    srcset="
+                                                                                                                ./images/portfolio/tablet/2-project-tab.jpg 1x,
+                                                                                                                ./images/portfolio/tablet/2-project-tab-2x.jpg 2x"
+                                    media="(min-width: 768px)" />
+
+                                <source
+                                    srcset="
+                                                                                                            ./images/portfolio/mobile/2-project-mob.jpg 1x,
+                                                                                                            ./images/portfolio/mobile/2-project-mob-2x.jpg 2x"
+                                    media="(min-width: 320px)" />
+                                <img src="./images/portfolio/filter2.jpg" alt="Постер New Orlean vs Golden Star"
+                                    width="450">
+
+                            </picture>
+                            <p class="portfolio-text">Ресурс предлагает комплексные предложения с разным уровнем
+                                функционала и сервисов. Все
+                                это
+                                позволит посетителю получить
+                                исчерпывающие сведения о компании или частном лице.</p>
+                        </div>
+
+                        <div class="portfolio-border">
+                            <h2 class="portfolio-name">Постер New Orlean vs Golden Star</h2>
+                            <p class="portfolio-filtr">Дизайн</p>
+                        </div>
+                    </li>
+                    <li class="portfolio-item">
+                        <div class="portfolio-wrap">
+                            <picture>
+                                <source
+                                    srcset="
+                                                                                                                                        ./images/portfolio/desktop/3-project.jpg 1x,
+                                                                                                                                        ./images/portfolio/desktop/3-project-2x.jpg 2x"
+                                    media="(min-width: 1200px)" />
+
+                                <source
+                                    srcset="
+                                                                                                                                            ./images/portfolio/tablet/3-project-tab.jpg 1x,
+                                                                                                                                            ./images/portfolio/tablet/3-project-tab-2x.jpg 2x"
+                                    media="(min-width: 768px)" />
+
+                                <source
+                                    srcset="
+                                                                                                                                        ./images/portfolio/mobile/3-project-mob.jpg 1x,
+                                                                                                                                        ./images/portfolio/mobile/3-project-mob-2x.jpg 2x"
+                                    media="(min-width: 320px)" />
+                                <img src="./images/portfolio/filter3.jpg" alt="Ресторан Seafood" width="450">
+
+                            </picture>
+                            <p class="portfolio-text">Ресурс предлагает комплексные предложения с разным уровнем
+                                функционала и сервисов. Все
+                                это
+                                позволит посетителю получить
+                                исчерпывающие сведения о компании или частном лице.</p>
+                        </div>
+
+                        <div class="portfolio-border">
+                            <h2 class="portfolio-name">Ресторан Seafood</h2>
+                            <p class="portfolio-filtr">Приложение</p>
+                        </div>
+                    </li>
+                    <li class="portfolio-item">
+                        <div class="portfolio-wrap">
+
+                            <picture>
+                                <source
+                                    srcset="
+                                                                                                                                        ./images/portfolio/desktop/4-project.jpg 1x,
+                                                                                                                                        ./images/portfolio/desktop/4-project-2x.jpg 2x"
+                                    media="(min-width: 1200px)" />
+
+                                <source
+                                    srcset="
+                                                                                                                                            ./images/portfolio/tablet/4-project-tab.jpg 1x,
+                                                                                                                                            ./images/portfolio/tablet/4-project-tab-2x.jpg 2x"
+                                    media="(min-width: 768px)" />
+
+                                <source
+                                    srcset="
+                                                                                                                                        ./images/portfolio/mobile/4-project-mob.jpg 1x,
+                                                                                                                                        ./images/portfolio/mobile/4-project-mob-2x.jpg 2x"
+                                    media="(min-width: 320px)" />
+                                <img src="./images/portfolio/filter4.jpg" alt="Постер New Orlean vs Golden Star"
+                                    width="450">
+
+                            </picture>
+                            <p class="portfolio-text">Ресурс предлагает комплексные предложения с разным уровнем
+                                функционала и сервисов. Все
+                                это
+                                позволит посетителю получить
+                                исчерпывающие сведения о компании или частном лице.</p>
+                        </div>
+
+                        <div class="portfolio-border">
+                            <h2 class="portfolio-name">Проект Prime</h2>
+                            <p class="portfolio-filtr">Проект Prime</p>
+                        </div>
+                    </li>
+                    <li class="portfolio-item">
+                        <div class="portfolio-wrap">
+                            <picture>
+                                <source
+                                    srcset="
+                                                                                                                                        ./images/portfolio/desktop/5-project.jpg 1x,
+                                                                                                                                        ./images/portfolio/desktop/5-project-2x.jpg 2x"
+                                    media="(min-width: 1200px)" />
+
+                                <source
+                                    srcset="
+                                                                                                                                            ./images/portfolio/tablet/5-project-tab.jpg 1x,
+                                                                                                                                            ./images/portfolio/tablet/5-project-tab-2x.jpg 2x"
+                                    media="(min-width: 768px)" />
+
+                                <source
+                                    srcset="
+                                                                                                                                        ./images/portfolio/mobile/5-project-mob.jpg 1x,
+                                                                                                                                        ./images/portfolio/mobile/5-project-mob-2x.jpg 2x"
+                                    media="(min-width: 320px)" />
+                                <img src="./images/portfolio/filter5.jpg" alt="Проект Boxes" width="450">
+
+                            </picture>
+                            <p class="portfolio-text">Ресурс предлагает комплексные предложения с разным уровнем
+                                функционала и сервисов. Все
+                                это
+                                позволит посетителю получить
+                                исчерпывающие сведения о компании или частном лице.</p>
+                        </div>
+
+                        <div class="portfolio-border">
+                            <h2 class="portfolio-name">Проект Boxes</h2>
+                            <p class="portfolio-filtr">Приложение</p>
+                        </div>
+                    </li>
+                    <li class="portfolio-item">
+                        <div class="portfolio-wrap">
+                            <picture>
+                                <source
+                                    srcset="
+                                                                                                                                        ./images/portfolio/desktop/6-project.jpg 1x,
+                                                                                                                                        ./images/portfolio/desktop/6-project-2x.jpg 2x"
+                                    media="(min-width: 1200px)" />
+
+                                <source
+                                    srcset="
+                                                                                                                                            ./images/portfolio/tablet/6-project-tab.jpg 1x,
+                                                                                                                                            ./images/portfolio/tablet/6-project-tab-2x.jpg 2x"
+                                    media="(min-width: 768px)" />
+
+                                <source
+                                    srcset="
+                                                                                                                                        ./images/portfolio/mobile/6-project-mob.jpg 1x,
+                                                                                                                                        ./images/portfolio/mobile/6-project-mob-2x.jpg 2x"
+                                    media="(min-width: 320px)" />
+                                <img src="./images/portfolio/filter6.jpg" alt="Inspiration has no Borders" width="450">
+
+                            </picture>
+                            <p class="portfolio-text">Ресурс предлагает комплексные предложения с разным уровнем
+                                функционала и сервисов. Все
+                                это
+                                позволит посетителю получить
+                                исчерпывающие сведения о компании или частном лице.</p>
+                        </div>
+
+                        <div class="portfolio-border">
+                            <h2 class="portfolio-name">Inspiration has no Borders</h2>
+                            <p class="portfolio-filtr">Inspiration has no Borders</p>
+                        </div>
+                    </li>
+                    <li class="portfolio-item">
+                        <div class="portfolio-wrap">
+                            <picture>
+                                <source
+                                    srcset="
+                                                                                                                                        ./images/portfolio/desktop/7-project.jpg 1x,
+                                                                                                                                        ./images/portfolio/desktop/7-project-2x.jpg 2x"
+                                    media="(min-width: 1200px)" />
+
+                                <source
+                                    srcset="
+                                                                                                                                            ./images/portfolio/tablet/7-project-tab.jpg 1x,
+                                                                                                                                            ./images/portfolio/tablet/7-project-tab-2x.jpg 2x"
+                                    media="(min-width: 768px)" />
+
+                                <source
+                                    srcset="
+                                                                                                                                        ./images/portfolio/mobile/7-project-mob.jpg 1x,
+                                                                                                                                        ./images/portfolio/mobile/7-project-mob-2x.jpg 2x"
+                                    media="(min-width: 320px)" />
+                                <img src="./images/portfolio/filter7.jpg" alt="Inspiration has no Borders" width="450">
+
+                            </picture>
+                            <p class="portfolio-text">Ресурс предлагает комплексные предложения с разным уровнем
+                                функционала и сервисов. Все
+                                это
+                                позволит посетителю получить
+                                исчерпывающие сведения о компании или частном лице.</p>
+                        </div>
+
+                        <div class="portfolio-border">
+                            <h2 class="portfolio-name">Inspiration has no Borders</h2>
+                            <p class="portfolio-filtr">Дизайн</p>
+                        </div>
+                    </li>
+                    <li class="portfolio-item">
+                        <div class="portfolio-wrap">
+                            <picture>
+                                <source
+                                    srcset="
+                                                                                                                                        ./images/portfolio/desktop/8-project.jpg 1x,
+                                                                                                                                        ./images/portfolio/desktop/8-project-2x.jpg 2x"
+                                    media="(min-width: 1200px)" />
+
+                                <source
+                                    srcset="
+                                                                                                                                            ./images/portfolio/tablet/8-project-tab.jpg 1x,
+                                                                                                                                            ./images/portfolio/tablet/8-project-tab-2x.jpg 2x"
+                                    media="(min-width: 768px)" />
+
+                                <source
+                                    srcset="
+                                                                                                                                        ./images/portfolio/mobile/8-project-mob.jpg 1x,
+                                                                                                                                        ./images/portfolio/mobile/8-project-mob-2x.jpg 2x"
+                                    media="(min-width: 320px)" />
+                                <img src="./images/portfolio/filter8.jpg" alt="Проект LAB" width="450">
+
+                            </picture>
+                            <p class="portfolio-text">Ресурс предлагает комплексные предложения с разным уровнем
+                                функционала и сервисов. Все
+                                это
+                                позволит посетителю получить
+                                исчерпывающие сведения о компании или частном лице.</p>
+                        </div>
+
+                        <div class="portfolio-border">
+                            <h2 class="portfolio-name">Проект LAB</h2>
+                            <p class="portfolio-filtr">Маркетинг</p>
+                        </div>
+                    </li>
+                    <li class="portfolio-item">
+                        <div class="portfolio-wrap">
+                            <picture>
+                                <source
+                                    srcset="
+                                                                                                                                        ./images/portfolio/desktop/9-project.jpg 1x,
+                                                                                                                                        ./images/portfolio/desktop/9-project-2x.jpg 2x"
+                                    media="(min-width: 1200px)" />
+
+                                <source
+                                    srcset="
+                                                                                                                                            ./images/portfolio/tablet/9-project-tab.jpg 1x,
+                                                                                                                                            ./images/portfolio/tablet/9-project-tab-2x.jpg 2x"
+                                    media="(min-width: 768px)" />
+
+                                <source
+                                    srcset="
+                                                                                                                                        ./images/portfolio/mobile/9-project-mob.jpg 1x,
+                                                                                                                                        ./images/portfolio/mobile/9-project-mob-2x.jpg 2x"
+                                    media="(min-width: 320px)" />
+                                <img src="./images/portfolio/filter9.jpg" alt="Growing Business" width="450">
+
+                            </picture>
+                            <p class="portfolio-text">Ресурс предлагает комплексные предложения с разным уровнем
+                                функционала и сервисов. Все
+                                это
+                                позволит посетителю получить
+                                исчерпывающие сведения о компании или частном лице.</p>
+                        </div>
+
+                        <div class="portfolio-border">
+                            <h2 class="portfolio-name">Growing Business</h2>
+                            <p class="portfolio-filtr">Приложение</p>
+                        </div>
+                    </li>
+                </ul>
+
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="footer__wraper container">
+            <div class="footer__contacts">
+                <a class="footer__logo link" href="index.html"><span class="logo__bracket">Web</span>Studio</a>
+                <address class="footer__address">
+                    <a class="link" href="https://goo.gl/maps/Ysp8wWhHFBnGZ7G2A" target="_blank"
+                        rel="noopener noreferrer">г.
+                        Киев, пр-т
+                        Леси Украинки,
+                        26</a>
+                </address>
+                <ul class="contacts list">
+                    <li class="contacts-item"><a class="link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+                    </li>
+                    <li class="contacts-item"><a class="link" href="tel:+380961111111">+38 096 111
+                            11 11</a></li>
+                </ul>
+            </div>
+            <div class="join">
+                <p class="join-header">Присоединяйтесь</p>
+                <ul class="join-list">
+                    <li class="list join-item">
+                        <a href="" class="join-link">
+                            <svg class="join-ico" width="20" height="20">
+                                <use href="./images/icons.svg#icon-instagram"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="list join-item">
+                        <a href="" class="join-link">
+                            <svg class="join-ico" width="20" height="20">
+                                <use href="./images/icons.svg#icon-twitter"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="list join-item">
+                        <a href="" class="join-link">
+                            <svg class="join-ico" width="20" height="20">
+                                <use href="./images/icons.svg#icon-facebook"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="list join-item">
+                        <a href="" class="join-link">
+                            <svg class="join-ico" width="20" height="20">
+                                <use href="./images/icons.svg#icon-linkedin"></use>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="subscribe">
+                <p class="subscribe-header">
+                    Подпишитесь на рассылку
+                </p>
+                <form class="subscribe-form">
+                    <label for="user-email"></label>
+
+                    <input placeholder="E-mail" type="email" name="email" id="user-email" class="subscribe-input" />
+
+                    <button type="submit" class="subscribe-btn">
+                        Подписаться
+                        <svg class="footer-send-ico" width="24" height="24">
+                            <use href="./images/icons.svg#icon-send"></use>
+                        </svg>
+                    </button>
+
+
+
+                </form>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
+</body>
+
+</html>

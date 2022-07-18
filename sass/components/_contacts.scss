@@ -1,0 +1,83 @@
+.heder__contacts {
+	@media screen and (max-width: 767px) {
+		display: none;
+	}
+	display: flex;
+	margin-left: auto;
+
+	@include tablet {
+		flex-direction: column;
+	}
+
+	@include desktop {
+		flex-direction: row;
+	}
+}
+
+.heder__contacts-item {
+	&:not(first-child) {
+		margin-left: 50px;
+	}
+
+	&:hover,
+	&:focus {
+		color: var(--accent-color);
+	}
+
+	transition-property: color;
+	transition-duration: 250ms;
+	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+	color: var(--secondary-text-color);
+	font-weight: 500;
+
+	letter-spacing: 0.02em;
+
+	display: flex;
+
+	@include tablet {
+		align-items: baseline;
+		&:not(:first-child) {
+			margin-top: 10px;
+		}
+		font-size: 12px;
+		line-height: calc(14 / 12);
+
+		.link {
+			display: flex;
+		}
+	}
+
+	@include desktop {
+		&:not(:first-child) {
+			margin-top: 0;
+		}
+		align-items: center;
+
+		font-size: 14px;
+		line-height: 1.14;
+	}
+}
+
+.heder__contacts-icon {
+	margin-right: 10px;
+	fill: currentColor;
+
+	@include tablet {
+		width: 14px;
+		height: 10px;
+		&.phone {
+			width: 10px;
+			height: 14px;
+		}
+	}
+
+	@include desktop {
+		width: 16px;
+		height: 12px;
+		&.phone {
+			width: 10px;
+			height: 16px;
+		}
+	}
+}
