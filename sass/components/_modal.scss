@@ -74,8 +74,6 @@
 
 		color: rgba(117, 117, 117, 0.5);
 	}
-
-	&:hover,
 	&:focus {
 		border-color: var(--accent-color);
 		cursor: pointer;
@@ -117,7 +115,10 @@
 }
 
 .modal-input {
-	&:hover,
+	&:focus + .modal-ico {
+		fill: var(--accent-color);
+		cursor: inherit;
+	}
 	&:focus {
 		border-color: var(--accent-color);
 		cursor: pointer;
@@ -137,11 +138,6 @@
 }
 
 .modal-ico {
-	&:focus + .modal-ico,
-	&:hover + .modal-ico {
-		fill: var(--accent-color);
-		cursor: inherit;
-	}
 	position: absolute;
 	left: 12px;
 	top: 50%;

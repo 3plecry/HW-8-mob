@@ -1,24 +1,23 @@
 
-@import "./reset";
-@import "./common";
+@import "./base/common";
+@import "./base/reset";
 @import "./utils/index";
 
-@import "./main-page/benefits";
-@import "./main-page/clients";
-@import "./main-page/hero";
-@import "./main-page/team";
-@import "./main-page/works";
-@import "./portfolio";
+@import "./layot/main-page/benefits";
+@import "./layot/main-page/clients";
+@import "./layot/main-page/hero";
+@import "./layot/main-page/team";
+@import "./layot/main-page/works";
+@import "./layot/portfolio";
 
-@import "./contacts";
-@import "./container";
-@import "./current";
-@import "./footer";
-@import "./header";
-@import "./logo";
-@import "./modal";
-@import "./backdrop";
-@import "./section";
-@import "./button";
+@import "./components/contacts";
+@import "./components/container";
+@import "./components/current";
+@import "./components/footer";
+@import "./components/header";
+@import "./components/logo";
+@import "./components/modal";
+@import "./components/backdrop";
+@import "./components/section";
+@import "./components/button";
 
-@import "./layot/index";

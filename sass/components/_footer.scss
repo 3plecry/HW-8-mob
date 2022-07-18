@@ -47,25 +47,8 @@
 	}
 }
 
-// .footer-logo {
-// 	font-family: "Raleway", sans-serif;
-// 	font-weight: 700;
-// 	font-size: 26px;
-// 	line-height: 1.19;
-// 	color: var(--additional-text-color);
-// }
-
 .footer__address {
 	.link {
-		&:hover,
-		&:focus {
-			color: var(--accent-color);
-		}
-
-		transition-property: color;
-		transition-duration: 250ms;
-		transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-
 		color: var(--additional-text-color);
 		font-weight: 400;
 		font-size: 14px;

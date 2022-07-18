@@ -41,10 +41,6 @@
 	align-items: center;
 }
 
-// .menu-list__item:not(:last-child) {
-// 	margin-right: 50px;
-// }
-
 .menu__item {
 	&:not(:last-child) {
 		margin-right: 50px;
@@ -103,11 +99,6 @@
 	background-color: transparent;
 	margin-bottom: 8px;
 }
-// .menu__mob-top {
-// }
-
-// .menu__mob-bottom {
-// }
 .mob__pages {
 	background-color: var(--additional-text-color);
 }

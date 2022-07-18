@@ -16,11 +16,7 @@
 }
 
 .clients-item {
-	// &:not(:first-child) {
-	// 	margin-left: 30px;
-	// }
 	width: calc((100% - 30px) / 2);
-	// width: 170px;
 	height: 92px;
 	@include tablet {
 		width: calc((100% - 60px) / 3);
@@ -58,17 +54,6 @@
 	justify-content: center;
 	align-items: center;
 }
-
-// .clients-item-link .client-item-ico {
-// 	transition-property: fill;
-// 	transition-duration: 250ms;
-// 	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-// }
-
-// .clients-item-link:hover .client-item-ico,
-// .clients-item-link:focus .client-item-ico {
-// 	fill: var(--accent-color);
-// }
 
 .client-item-ico {
 	fill: var(--button-no-active-color);
