@@ -31,9 +31,19 @@
 	flex-wrap: wrap;
 
 	gap: 15px 8px;
-
+	@include mobile320 {
+		margin-bottom: 40px;
+	}
+	@include mobile {
+		margin-bottom: 40px;
+	}
 	@include tablet {
 		justify-content: center;
+		margin-bottom: 30px;
+	}
+	@include desktop {
+		justify-content: center;
+		margin-bottom: 50px;
 	}
 }
 .portfolio-name {
